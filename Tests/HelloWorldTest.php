@@ -41,6 +41,7 @@ VALUES
     public function tearDown()
     {
         $this->pdo->query("DROP TABLE hello");
+        $this->pdo->query("DROP TABLE personnages");
     }
 
     public function testHelloWorld()
